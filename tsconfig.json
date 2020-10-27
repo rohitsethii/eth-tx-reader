@@ -1,0 +1,52 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "pretty": true,
+        "sourceMap": true,
+        "target": "ES2017",
+        "outDir": "./build",
+        "baseUrl": "./src",
+        "rootDir": "./src",
+        "removeComments": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "noImplicitThis": true,
+        "alwaysStrict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": false,
+        "noImplicitReturns": true,
+        "resolveJsonModule": true,
+        "noFallthroughCasesInSwitch": true,
+        "skipLibCheck": true,
+        "typeRoots": [
+            "./node_modules/@types",
+            "./typings"
+        ],
+        "paths": {
+            "@common": [
+                "common/index"
+            ],
+            "@routes": [
+                "routes/index"
+            ],
+            "@baseRoute": [
+                "routes/base.routes"
+            ],
+            "@controllers": [
+                "controllers/index"
+            ],
+            "@utils": [
+                "utils/index"
+            ],
+        },
+        "esModuleInterop": true
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
