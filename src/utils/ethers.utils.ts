@@ -3,7 +3,7 @@ import { CONFIG } from "@common";
 
 class EtherUtils {
 
-    private provider = Ether.getDefaultProvider(CONFIG.ETH_NETWORK);
+    private provider = new Ether.providers.JsonRpcProvider(CONFIG.ETH_NETWORK);
 
     async filterEvents(txHash: any) {
 
